@@ -1,34 +1,35 @@
-/* Testing */ 
 import React from 'react';
 
-   export default class TodoBox extends React.Component{
-     render() {
-       return <div className="todoBox">
-          <h1>Todos</h1>
-           <TodoList/>
-           <TodoForm/>
-         </div>
-     }
-   }
+export default class TodoBox extends React.Component {
+    render() {
+        return (
+            <div className="todoBox">
+                <h1>Todos</h1>
+                <TodoList />
+                <TodoForm />
+            </div>
+        );
+    }
+}
 
-
-export class TodoList extends React.Component{
-  render(){
-    return <div className="todoList">
-      <tbody>
-        <Todo title="Shopping">Milk</Todo>
-        <Todo title="Hair Cut">13.00</Todo>
-      </tbody>
+class TodoList extends React.Component {
+  // Write code here
+  render() {
+    return (
+      <div className="todoList">
+      I am a TodoList.
       </div>
+    )
   }
 }
-class TodoForm extends React.Component{
-  render(){
-    return <div className="todoForm">
+
+class TodoForm extends React.Component {
+  // Write code here
+render(){
+  return (
+      <div className="todoForm">
       I am a TodoForm.
       </div>
+    )
   }
-}
-class Todo extends React.Component{
-  //
 }
